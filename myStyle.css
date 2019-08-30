@@ -1,0 +1,186 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ebecf0;
+}
+
+header{
+    padding-top: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.05);
+    box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+.logo{
+    align-self: flex-start;
+}
+
+.menu{
+    list-style: none;
+    align-self: flex-end;
+    display: flex;
+}
+
+.menu>li{
+    /*display: inline-block;*/
+    flex-wrap: wrap;
+    margin-left: 20px;
+    color :#757575;
+}
+
+
+
+.menu li a:hover {
+    color: #527a99;
+    cursor: pointer;
+}
+
+.menu li:hover .dropdown-content  {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.menuItem{
+    margin-bottom: 20px;
+}
+
+.dropdown-content{
+    /*margin-top: 20px;*/
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+    border-radius: 6px;
+    width: 180px;
+    transition: visibility 0s,opacity 0.5s linear;
+    box-shadow: 2px 2px 2px 2px rgba(6, 6, 6, 1);
+}
+
+.dropdown-content ul{
+    padding: 0;
+}
+
+.dropdown-content li{
+    margin: 20px;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: margin-left 500ms;
+}
+
+.dropdown-content a:hover{
+    margin-left: 10px;
+}
+
+.dropdown-content ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.description{
+    margin-top: 20px;
+    padding: 10% 10%;
+    background-image: url("assets/blank-business-composition-373076.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: auto;
+
+
+}
+
+.description h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.description h1 .g{
+    /*color: #757575;*/
+    display: block;
+}
+
+.description h1 .point{
+    color: #527a99;
+}
+
+.description p{
+    color: #757575;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    /*font-weight: 100*/;
+}
+
+.our-products{
+
+    padding: 5% 10%;
+    background-image: url("assets/computer-desk-electronics-238118.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.products-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content :space-evenly;
+}
+
+.product{
+    max-width: 300px;
+    margin : 10px;
+}
+
+.product:hover{
+    border-radius: 8px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product:hover .product-name{
+    color: #527a99;
+    margin-left: 10px;
+}
+
+.product-name{
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.5s,margin-left 0.5s;
+
+}
+
+.product-description{
+    padding: 10px;
+    font-weight: 200;
+    font-size: 14px;
+    color: #757575;
+}
+
+
+.product-pic{
+    height: auto;
+    width: 300px;
+}
